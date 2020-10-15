@@ -1,0 +1,26 @@
+{
+  "name": "discord-spotify-playlist-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "export $(grep -v '^#' .env | xargs) && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmedinilla/discord-spotify-playlist-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmedinilla/discord-spotify-playlist-tracker/issues"
+  },
+  "homepage": "https://github.com/cmedinilla/discord-spotify-playlist-tracker#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "nodejs-base64-encode": "^1.1.0",
+    "qs": "^6.9.4"
+  }
+}
