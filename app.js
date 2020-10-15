@@ -1,10 +1,10 @@
-const { getBearerToken, getPlaylist } = require('./spotify');
+const { getBearerToken, getPlaylistTracks } = require('./spotify');
 
 const run = async () => {
   try {
     const token = await getBearerToken();
-    const playlist = await getPlaylist(token.data.access_token);
-    console.log(playlist.data);
+    const playlist = await getPlaylistTracks(token.data.access_token);
+    console.log(playlist.length);
   } catch (error) {
     console.error(error);
   }

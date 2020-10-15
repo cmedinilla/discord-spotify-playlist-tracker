@@ -1,4 +1,4 @@
 const { getBearerToken } = require('./login');
-const { getPlaylist } = require('./playlist');
+const { getPlaylistTracks } = require('./playlist');
 
-module.exports = { getBearerToken, getPlaylist };
+module.exports = { getBearerToken, getPlaylistTracks };
